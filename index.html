@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraduVoz – Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    :root {
+      --bg:        #FAF3E7;
+      --white:     #FFFFFF;
+      --header-bg: #8B3A62;
+      --green:     #4CAF50;
+      --blue:      #4D7C8A;
+      --red:       #E35D5B;
+      --blue-dark: #6B4E71;
+      --gray-light:#E9DED1;
+      --text:      #3E2C24;
+      --text-sec:  #5B4C44;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-[var(--text)] font-sans">
+  <!-- Header -->
+  <header class="bg-[var(--header-bg)] text-white sticky top-0 z-50 shadow-lg">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-2 py-0">
+        <div class="flex items-center space-x-3" >
+          <img src="https://i.postimg.cc/TPQF42wz/555.png" alt="Logo TraduVoz" class="w-20 h-20">
+          <h1 class="text-3xl font-bold">Creole</h1>
+        </div>
+      <nav>
+        <ul class="flex space-x-8 text-lg">
+          <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+          <li><a href="#caracteristicas" class="hover:underline">Características</a></li>
+          <li><a href="#acerca" class="hover:underline">Acerca</a></li>
+          <li><a href="#equipo" class="hover:underline">Equipo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="bg-[var(--blue)] text-white text-center py-28 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-5xl font-extrabold mb-6">Comunicación sin barreras</h2>
+      <p class="text-xl mb-8">TraduVoz es una app gratuita que traduce en tiempo real entre español y créole haitiano, incluso sin conexión.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#caracteristicas" class="bg-white text-[var(--blue)] px-8 py-3 rounded-full font-semibold hover:bg-gray-200">Ver características</a>
+        <a href="#acerca" class="bg-white text-[var(--blue)] px-8 py-3 rounded-full font-semibold hover:bg-gray-200">Acerca del proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introducción -->
+  <section class="max-w-5xl mx-auto py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold text-[var(--blue-dark)] mb-6">¿Por qué hacemos esto?</h3>
+    <p class="text-lg text-[var(--text-sec)] leading-relaxed">
+      En Tapachula, miles de migrantes haitianos enfrentan dificultades para comunicarse y acceder a servicios básicos. Con TraduVoz buscamos empoderarlos, ofreciéndoles una herramienta accesible y gratuita que facilite su integración, mejore su acceso a la salud, la justicia y garantice su dignidad.
+    </p>
+  </section>
+
+  <!-- Características -->
+  <section id="caracteristicas" class="bg-[var(--gray-light)] py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-[var(--blue-dark)] mb-12">Características de TraduVoz</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[var(--blue)]">Voz y texto</h3>
+          <p>Habla o escribe y obtén traducciones instantáneas. Ideal para consultas médicas, trámites legales y conversaciones cotidianas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[var(--blue)]">Modo offline</h3>
+          <p>Traduce sin conexión en zonas remotas. Descarga el paquete de idiomas y usa la app sin consumir datos.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[var(--blue)]">Diccionario visual</h3>
+          <p>Pictogramas claros para palabras de uso diario (salud, comida, transporte). Ideal para usuarios con baja alfabetización.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[var(--blue)]">Aprendizaje local</h3>
+          <p>La IA se ajusta a tu acento y patrones de uso. Cuanto más interactúes, más precisa será la traducción.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca del proyecto -->
+  <section id="acerca" class="max-w-6xl mx-auto py-24 px-6">
+    <h2 class="text-4xl font-bold text-center text-[var(--blue-dark)] mb-12">Acerca del proyecto</h2>
+    <div class="grid md:grid-cols-2 gap-10 mb-12">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-2xl font-semibold text-[var(--red)] mb-4">Planteamiento del problema</h3>
+        <p>En Tapachula, Chiapas, los migrantes haitianos enfrentan barreras de comunicación que limitan su acceso a información, salud y asistencia legal.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-2xl font-semibold text-[var(--green)] mb-4">Propuesta de solución</h3>
+        <ul class="list-disc list-inside text-[var(--text-sec)]">
+          <li>App gratuita con traducción de voz y texto.</li>
+          <li>Modo offline disponible.</li>
+          <li>Diseño inclusivo y accesible.</li>
+          <li>IA adaptada al acento haitiano.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-3xl font-bold text-center text-[var(--blue)] mb-8">Objetivos de Desarrollo Sostenible (ODS)</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h4 class="text-xl font-semibold text-[var(--blue)] mb-1">ODS 3</h4>
+          <p class="text-[var(--text-sec)] text-sm">Salud y bienestar</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h4 class="text-xl font-semibold text-[var(--blue)] mb-1">ODS 10</h4>
+          <p class="text-[var(--text-sec)] text-sm">Reducción de desigualdades</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h4 class="text-xl font-semibold text-[var(--blue)] mb-1">ODS 16</h4>
+          <p class="text-[var(--text-sec)] text-sm">Paz, justicia e instituciones sólidas</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h4 class="text-xl font-semibold text-[var(--blue)] mb-1">ODS 9</h4>
+          <p class="text-[var(--text-sec)] text-sm">Industria, innovación e infraestructura</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h4 class="text-xl font-semibold text-[var(--blue)] mb-1">ODS 17</h4>
+          <p class="text-[var(--text-sec)] text-sm">Alianzas para lograr los objetivos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section id="equipo" class="bg-[var(--gray-light)] py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-[var(--blue-dark)] mb-12">Equipo desarrollador</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold">Mario Enrique Díaz Gasca</h3>
+          <p class="text-sm text-[var(--text-sec)]">243170@uptapachula.edu.mx</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold">Francisco Javier Ponce Domínguez</h3>
+          <p class="text-sm text-[var(--text-sec)]">243189@uptapachula.edu.mx</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold">Escobar Díaz Juan Ociel</h3>
+          <p class="text-sm text-[var(--text-sec)]">243014@uptapachula.edu.mx</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold">Luis Antonio Bartolón Ramírez</h3>
+          <p class="text-sm text-[var(--text-sec)]">243268@uptapachula.edu.mx</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Descarga -->
+  <section class="bg-[var(--gray-light)] py-16 px-6">
+    <div class="max-w-md mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Descarga la app ahora</h3>
+      <a href="#" class="bg-[var(--blue)] text-white px-8 py-4 rounded-full font-semibold hover:bg-[var(--blue-dark)] transition">Descargar TraduVoz</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--header-bg)] text-white text-center py-6">
+    <p class="text-sm">&copy; 2025 TraduVoz. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
